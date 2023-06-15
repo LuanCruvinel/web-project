@@ -10,24 +10,23 @@ import java.util.Objects;
 
 @Entity
 public class Tarefa implements Serializable {
- private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private  String titulo;
+    private String titulo;
     private String descricao;
     private LocalDateTime dataParaFinalizar;
     private Boolean finalizado = false;
 
 
     public Tarefa() {
-        super();
     }
 
     public Tarefa(Integer id, String titulo, String descricao, LocalDateTime dataParaFinalizar, Boolean finalizado) {
-        super();
+
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
