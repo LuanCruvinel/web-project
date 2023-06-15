@@ -2,15 +2,14 @@ package com.luan.projectwebfullstackback.tododomain;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
-
+//Fazendo teste !!!!
 public class Todo {
 
     private Integer id;
-    private  String titulo;
+    private String titulo;
     private String descricao;
     private LocalDateTime dataParaFinalizar;
     private Boolean finalizado = false;
-
 
     public Todo() {
     }
